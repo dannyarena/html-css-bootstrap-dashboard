@@ -51,8 +51,59 @@
               <h2>Catalogo Libri</h2>
               <button class="btn btn-primary">Aggiungi Libro</button>
             </div>
-      
-            <!-- Qui va la tabella -->
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Titolo</th>
+                    <th class="d-none d-md-table-cell">Data prestito</th>
+                    <th>Stato</th>
+                    <th>Azioni</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>I pilastri della terra</td>
+                    <td class="d-none d-md-table-cell">-</td>
+                    <td><span class="badge bg-success">Disponibile</span></td>
+                    <td>
+                      <button class="btn btn-sm btn-outline-secondary me-1">
+                        ✏️
+                      </button>
+                      <button class="btn btn-sm btn-outline-secondary">
+                        🗑️
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Il signore degli anelli</td>
+                    <td class="d-none d-md-table-cell">18/10/2023</td>
+                    <td><span class="badge bg-warning text-dark">In prestito</span></td>
+                    <td>
+                      <button class="btn btn-sm btn-outline-secondary me-1">
+                        ✏️
+                      </button>
+                      <button class="btn btn-sm btn-outline-secondary">
+                        🗑️
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Il codice Da Vinci</td>
+                    <td class="d-none d-md-table-cell">-</td>
+                    <td><span class="badge bg-danger">Non disponibile</span></td>
+                    <td>
+                      <button class="btn btn-sm btn-outline-secondary me-1">
+                        ✏️
+                      </button>
+                      <button class="btn btn-sm btn-outline-secondary">
+                        🗑️
+                      </button>
+                    </td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+              
           </div>
       
           <!-- Colonna destra: Todo + FAQ -->
